@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --heading-h1: 60px;
+  --heading-h3: 44px;
+  --heading-h4: 28px;
+  --lg-text: 24px;
+  --md-text: 18px;
+  --sm-text: 15px;
+  --purple: #696BEB;
+  --blue : #5147DD;
+  --black: #111111;
+  --blue-violet: #E1E8FE;
+  --dark-blue : rgba(12, 12, 69, .99);
+  --grey: #71717A;
+  --light-grey: #6E7A91;
+  --dark-grey : #475467;
+  --green: #C9FFC4;
+  --pink: #FFCBC5;
+  --yellow: #F1F2A4;
+  --light-grayish-blue: #E9EAF0;
+  --green-shade: rgba(76, 175, 80, 1)
+  --purple-gradient : linear-gradient(180deg, #696BEB 0%, #5147DD 100%, #5147DD 100%);
+
+}
+
+
+.testimonials_container div:nth-child(1),
+.testimonials_container div:nth-child(6) {
+  background-color: var(--green);
+}
+
+.testimonials_container div:nth-child(2),
+.testimonials_container div:nth-child(4),
+.testimonials_container div:nth-child(9) {
+  background-color: #fff;
+}
+
+.testimonials_container div:nth-child(3),
+.testimonials_container div:nth-child(7) {
+  background-color: var(--blue-violet);
+}
+
+.testimonials_container div:nth-child(5) {
+  background-color: var(--pink);
+}
+
+.testimonials_container div:nth-child(8) {
+  background-color: var(--yellow);
+}
+
+
+
+.gradient {
+  background: linear-gradient(75deg, rgba(249, 248, 252, 1) 10%, rgba(105, 107, 235, 0.20) 49%, rgba(255, 255, 255, 1) 99%);
+}
+
+.btn_gradient{
+  background: linear-gradient(180deg, #696BEB 0%, #5147DD 100%, #5147DD 100%);
+}
+
+
+.radial-gradient {
+  background: radial-gradient(circle at center, rgba(12, 12, 69, 0) 0%, rgba(12, 12, 69, 0.93) 93%);
+}
+
+.shadow {
+  box-shadow: 0px 4px 6px -2px #5147DD08;
+  box-shadow: 0px 12px 16px -4px #5147DD14;
+}
+
+.box_shadow{
+  box-shadow: 0px 4px 6px -1px #12121714;
+}
+
+.pricing_testimonials_container div:last-child img{
+  display: none;
+}
+
+
+@media screen and (max-width : 640px) {
+  :root{
+    --heading-h1 : 28px;
+    --heading-h3 : 24px;
+    --heading-h4 : 16px;
+    --lg-text : 18px;
+    --md-text : 13px;
+    --sm-text : 11px;
+  }
+.testimonials_container div:nth-child(n+4) {
+  display: none;
+}
+.testimonials_container div:nth-child(1) {
+  background-color: #fff;
+}
+.testimonials_container div:nth-child(2) {
+  background-color: var(--pink);
+}
+.testimonials_container div:nth-child(3) {
+  background-color: var(--green);
+}
+
+}
